@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 52.33%;
+}
+
+.navbar {
+    display: flex;
+    margin-bottom: 3rem;
+    list-style: none;
+    width: 100%;
+    height: 6rem;
+    background-color: gray;
+}
+
+.navbar li {
+    text-shadow: 0 .3rem 1rem rgb(241, 191, 191);
+    list-style: none;
+    float: left;
+    text-transform: capitalize;
+    padding: 1.5rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.navbar li:hover {
+    color: blue;
+    padding-left: 1rem;
+    transition-duration: 0.5s;
+    transform-style: flat;
+}
+
+body::before {
+    position: absolute;
+    z-index: -1;
+    background-image: url("img1.jpg");
+    width: 100%;
+    height: 60%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    content: "";
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50rem;
+    display: flex;
+}
+
+.box {
+    border-radius: .5rem;
+    box-shadow: 0 .3rem 1rem rgb(24, 9, 9);
+    width: 33%;
+    float: left;
+    margin: 1rem;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    margin: 1rem;
+    height: 20rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h1 {
+    text-shadow: 0 .3rem 1rem rgb(133, 122, 122);
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+@media (max-width:700px) {
+    .navbar li {
+        float: left;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+}
